@@ -8,7 +8,7 @@ const NavLink = props => (
 )
 
 export default props => (
-  <div style={{ maxWidth: `600px`, margin: `0 auto`, padding: `0 1rem` }}>
+  <div style={{ maxWidth: `600px`, margin: `0 auto`, padding: `0 1rem`, display: `flex`, flexDirection: `column`, minHeight: `100vh` }}>
     <header>
       <h1>
         <Link to="/">developish</Link> <span>is Brandon Wright</span>
@@ -21,6 +21,17 @@ export default props => (
       </ul>
     </header>
 
-    { props.children }
+    <div style={{ flex: 1 }}>
+      {props.children}
+    </div>
+
+    <footer style={{ textAlign: `center`, fontSize: `0.8rem`, padding: `1rem` }}>
+      <div>
+        Copyright 2019 Brandon Wright
+      </div>
+      <div>
+        Hosted on <a href="https://surge.sh/">https://surge.sh/</a>
+      </div>
+    </footer>
   </div>
 )
