@@ -8,7 +8,7 @@ const NavLink = props => (
 )
 
 export default props => (
-  <div style={{ maxWidth: `600px`, margin: `0 auto` }}>
+  <div style={{ maxWidth: `600px`, margin: `0 auto`, padding: `0 1rem` }}>
     <header>
       <h1>
         <Link to="/">developish</Link> <span>is Brandon Wright</span>
